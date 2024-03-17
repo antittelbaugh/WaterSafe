@@ -1,25 +1,36 @@
 import PySpin
-import tkinter as tk
-from PIL import Image, ImageTk
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QSlider, QVBoxLayout, QWidget
+from PyQt5.QtCore import Qt, QTimer
+from PIL import Image, ImageQt
+import sys
 import threading
 
-class CameraGUI:
-    def __init__(self, master):
-        self.master = master
-        self.master.title("Camera GUI")
+class CameraGUI(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Camera GUI")
 
         self.camera = None
-        self.image_label = tk.Label(master)
-        self.image_label.pack()
+        self.image_label = QLabel()
+        self.setCentralWidget(self.image_label)
 
-        self.gain_var = tk.DoubleVar()
-        self.exposure_var = tk.DoubleVar()
+        self.gain_slider = QSlider(Qt.Horizontal)
+        self.gain_slider.setMinimum(0)
+        self.gain_slider.setMaximum(20)
+        self.gain_slider.valueChanged.connect(self.update_gain)
 
-        self.gain_scale = tk.Scale(master, label="Gain", from_=0, to=20, orient=tk.HORIZONTAL, variable=self.gain_var, command=self.update_gain)
-        self.gain_scale.pack()
+        self.exposure_slider = QSlider(Qt.Horizontal)
+        self.exposure_slider.setMinimum(0)
+        self.exposure_slider.setMaximum(100000)
+        self.exposure_slider.valueChanged.connect(self.update_exposure)
 
-        self.exposure_scale = tk.Scale(master, label="Exposure (us)", from_=0, to=100000, orient=tk.HORIZONTAL, variable=self.exposure_var, command=self.update_exposure)
-        self.exposure_scale.pack()
+        layout = QVBoxLayout()
+        layout.addWidget(self.gain_slider)
+        layout.addWidget(self.exposure_slider)
+
+        widget = QWidget()
+        widget.setLayout(layout)
+        self.setCentralWidget(widget)
 
         self.initialize_camera()
 
@@ -34,7 +45,6 @@ class CameraGUI:
         self.camera.Init()
         self.camera.BeginAcquisition()
 
-        # Create a separate thread for camera acquisition
         self.acquisition_thread = threading.Thread(target=self.acquire_images)
         self.acquisition_thread.daemon = True
         self.acquisition_thread.start()
@@ -42,31 +52,23 @@ class CameraGUI:
     def acquire_images(self):
         while True:
             try:
-                # Get the current gain and exposure values
-                gain = self.gain_var.get()
-                exposure_time = self.exposure_var.get()
+                gain = self.gain_slider.value()
+                exposure_time = self.exposure_slider.value()
 
-                # Set the camera gain and exposure
                 if self.camera is not None:
                     self.camera.Gain.SetValue(gain)
                     self.camera.ExposureTime.SetValue(exposure_time)
 
-                # Capture an image
                 image_result = self.camera.GetNextImage()
                 if image_result.IsIncomplete():
                     print("Image incomplete")
                 else:
-                    # Convert the image to a format suitable for display
                     image_data = image_result.GetNDArray()
                     image = Image.fromarray(image_data)
-                    photo = ImageTk.PhotoImage(image=image)
+                    qt_image = ImageQt.ImageQt(image)
+                    pixmap = QPixmap.fromImage(qt_image)
+                    self.image_label.setPixmap(pixmap)
 
-                    # Update the image displayed in the GUI
-                    self.image_label.config(image=photo)
-                    self.image_label.image = photo
-                    self.master.update()
-
-                # Release the image
                 image_result.Release()
 
             except PySpin.SpinnakerException:
@@ -74,15 +76,13 @@ class CameraGUI:
                 break
 
     def update_gain(self, value):
-        pass  # Gain is updated directly within acquire_images()
+        pass
 
     def update_exposure(self, value):
-        pass  # Exposure time is updated directly within acquire_images()
-
-def main():
-    root = tk.Tk()
-    app = CameraGUI(root)
-    root.mainloop()
+        pass
 
 if __name__ == "__main__":
-    main()
+    app = QApplication(sys.argv)
+    gui = CameraGUI()
+    gui.show()
+    sys.exit(app.exec_())
