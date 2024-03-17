@@ -147,6 +147,7 @@ def main():
     for cam in cam_list:
         # Create the main window
         window = QWidget()
+        
         window.setWindowTitle('Camera Viewer')
 
         # Create a label to display the image
@@ -156,6 +157,7 @@ def main():
 
         # Set layout to main window and display
         window.setLayout(layout)
+        window.setGeometry(100, 100, 800, 600)  # Set window size (x, y, width, height)
         window.show()
 
         # Run example for the camera
