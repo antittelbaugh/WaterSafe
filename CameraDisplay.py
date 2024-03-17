@@ -1,88 +1,178 @@
-import PySpin
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QSlider, QVBoxLayout, QWidget
-from PyQt5.QtCore import Qt, QTimer
-from PIL import Image, ImageQt
 import sys
-import threading
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLabel
+from PyQt5.QtGui import QImage, QPixmap
+import PySpin
 
-class CameraGUI(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Camera GUI")
+global continue_recording
+continue_recording = True
 
-        self.camera = None
-        self.image_label = QLabel()
-        self.setCentralWidget(self.image_label)
 
-        self.gain_slider = QSlider(Qt.Horizontal)
-        self.gain_slider.setMinimum(0)
-        self.gain_slider.setMaximum(20)
-        self.gain_slider.valueChanged.connect(self.update_gain)
+def acquire_and_display_images(cam, nodemap, nodemap_tldevice, label):
+    """
+    This function continuously acquires images from a device and displays them in a GUI.
+    """
+    global continue_recording
 
-        self.exposure_slider = QSlider(Qt.Horizontal)
-        self.exposure_slider.setMinimum(0)
-        self.exposure_slider.setMaximum(100000)
-        self.exposure_slider.valueChanged.connect(self.update_exposure)
+    sNodemap = cam.GetTLStreamNodeMap()
 
-        layout = QVBoxLayout()
-        layout.addWidget(self.gain_slider)
-        layout.addWidget(self.exposure_slider)
+    # Change bufferhandling mode to NewestOnly
+    node_bufferhandling_mode = PySpin.CEnumerationPtr(sNodemap.GetNode('StreamBufferHandlingMode'))
+    if not PySpin.IsAvailable(node_bufferhandling_mode) or not PySpin.IsWritable(node_bufferhandling_mode):
+        print('Unable to set stream buffer handling mode.. Aborting...')
+        return False
 
-        widget = QWidget()
-        widget.setLayout(layout)
-        self.setCentralWidget(widget)
+    # Retrieve entry node from enumeration node
+    node_newestonly = node_bufferhandling_mode.GetEntryByName('NewestOnly')
+    if not PySpin.IsAvailable(node_newestonly) or not PySpin.IsReadable(node_newestonly):
+        print('Unable to set stream buffer handling mode.. Aborting...')
+        return False
 
-        self.initialize_camera()
+    # Retrieve integer value from entry node
+    node_newestonly_mode = node_newestonly.GetValue()
 
-    def initialize_camera(self):
-        system = PySpin.System.GetInstance()
-        self.camera_list = system.GetCameras()
-        if self.camera_list.GetSize() == 0:
-            print("No cameras found.")
-            return
+    # Set integer value from entry node as new value of enumeration node
+    node_bufferhandling_mode.SetIntValue(node_newestonly_mode)
 
-        self.camera = self.camera_list.GetByIndex(0)
-        self.camera.Init()
-        self.camera.BeginAcquisition()
+    try:
+        node_acquisition_mode = PySpin.CEnumerationPtr(nodemap.GetNode('AcquisitionMode'))
+        if not PySpin.IsAvailable(node_acquisition_mode) or not PySpin.IsWritable(node_acquisition_mode):
+            print('Unable to set acquisition mode to continuous (enum retrieval). Aborting...')
+            return False
 
-        self.acquisition_thread = threading.Thread(target=self.acquire_images)
-        self.acquisition_thread.daemon = True
-        self.acquisition_thread.start()
+        # Retrieve entry node from enumeration node
+        node_acquisition_mode_continuous = node_acquisition_mode.GetEntryByName('Continuous')
+        if not PySpin.IsAvailable(node_acquisition_mode_continuous) or not PySpin.IsReadable(
+                node_acquisition_mode_continuous):
+            print('Unable to set acquisition mode to continuous (entry retrieval). Aborting...')
+            return False
 
-    def acquire_images(self):
-        while True:
+        # Retrieve integer value from entry node
+        acquisition_mode_continuous = node_acquisition_mode_continuous.GetValue()
+
+        # Set integer value from entry node as new value of enumeration node
+        node_acquisition_mode.SetIntValue(acquisition_mode_continuous)
+
+        print('Acquisition mode set to continuous...')
+
+        #  Begin acquiring images
+        cam.BeginAcquisition()
+
+        print('Acquiring images...')
+
+        while continue_recording:
             try:
-                gain = self.gain_slider.value()
-                exposure_time = self.exposure_slider.value()
+                image_result = cam.GetNextImage(1000)
 
-                if self.camera is not None:
-                    self.camera.Gain.SetValue(gain)
-                    self.camera.ExposureTime.SetValue(exposure_time)
-
-                image_result = self.camera.GetNextImage()
+                # Ensure image completion
                 if image_result.IsIncomplete():
-                    print("Image incomplete")
+                    print('Image incomplete with image status %d ...' % image_result.GetImageStatus())
                 else:
+                    # Getting the image data as a numpy array
                     image_data = image_result.GetNDArray()
-                    image = Image.fromarray(image_data)
-                    qt_image = ImageQt.ImageQt(image)
-                    pixmap = QPixmap.fromImage(qt_image)
-                    self.image_label.setPixmap(pixmap)
 
+                    # Convert the image to a Qt image
+                    height, width = image_data.shape
+                    q_img = QImage(image_data.data, width, height, width, QImage.Format_Grayscale8)
+
+                    # Display the image on the label
+                    label.setPixmap(QPixmap.fromImage(q_img))
+
+                # Release image
                 image_result.Release()
 
-            except PySpin.SpinnakerException:
-                print("Camera disconnected or error occurred")
-                break
+            except PySpin.SpinnakerException as ex:
+                print('Error: %s' % ex)
+                return False
 
-    def update_gain(self, value):
-        pass
+        # End acquisition
+        cam.EndAcquisition()
 
-    def update_exposure(self, value):
-        pass
+    except PySpin.SpinnakerException as ex:
+        print('Error: %s' % ex)
+        return False
 
-if __name__ == "__main__":
+    return True
+
+
+def run_single_camera(cam, label):
+    """
+    This function acts as the body of the example.
+    """
+    try:
+        nodemap_tldevice = cam.GetTLDeviceNodeMap()
+
+        # Initialize camera
+        cam.Init()
+
+        # Retrieve GenICam nodemap
+        nodemap = cam.GetNodeMap()
+
+        # Acquire and display images
+        result = acquire_and_display_images(cam, nodemap, nodemap_tldevice, label)
+
+        # Deinitialize camera
+        cam.DeInit()
+
+    except PySpin.SpinnakerException as ex:
+        print('Error: %s' % ex)
+        result = False
+
+    return result
+
+
+def main():
+    """
+    Example entry point.
+    """
+    # Initialize Qt application
     app = QApplication(sys.argv)
-    gui = CameraGUI()
-    gui.show()
+
+    # Retrieve singleton reference to system object
+    system = PySpin.System.GetInstance()
+
+    # Retrieve list of cameras from the system
+    cam_list = system.GetCameras()
+
+    num_cameras = cam_list.GetSize()
+
+    print('Number of cameras detected: %d' % num_cameras)
+
+    # Finish if there are no cameras
+    if num_cameras == 0:
+        print('Not enough cameras!')
+        input('Done! Press Enter to exit...')
+        return False
+
+    # Run example on each camera
+    for cam in cam_list:
+        # Create the main window
+        window = QWidget()
+        window.setWindowTitle('Camera Viewer')
+
+        # Create a label to display the image
+        image_label = QLabel()
+        layout = QVBoxLayout()
+        layout.addWidget(image_label)
+
+        # Set layout to main window and display
+        window.setLayout(layout)
+        window.show()
+
+        # Run example for the camera
+        result = run_single_camera(cam, image_label)
+
+        if not result:
+            print('Failed to run camera example.')
+
+    # Clear camera list before releasing system
+    cam_list.Clear()
+
+    # Release system instance
+    system.ReleaseInstance()
+
+    # Start Qt application event loop
     sys.exit(app.exec_())
+
+
+if __name__ == '__main__':
+    main()
