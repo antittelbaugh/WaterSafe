@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QSlider, QVBoxLayout, QWidget
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QImage
 from PyQt5.QtCore import Qt
 import PySpin
 import numpy as np
@@ -44,6 +44,9 @@ class CameraGUI(QMainWindow):
         self.camera = self.camera_list.GetByIndex(0)
         self.camera.Init()
         self.camera.BeginAcquisition()
+
+        # Turn off auto gain
+        self.camera.GainAuto.SetValue(PySpin.GainAuto_Off)
 
         # Create a separate thread for camera acquisition
         self.acquisition_thread = threading.Thread(target=self.acquire_images)
