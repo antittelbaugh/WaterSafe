@@ -1,25 +1,36 @@
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QSlider, QVBoxLayout, QWidget
+from PyQt5.QtGui import QPixmap
+from PyQt5.QtCore import Qt
 import PySpin
-import tkinter as tk
-from PIL import Image, ImageTk
+import numpy as np
 import threading
 
-class CameraGUI:
-    def __init__(self, master):
-        self.master = master
-        self.master.title("Camera GUI")
+class CameraGUI(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Camera GUI")
+
+        self.central_widget = QWidget()
+        self.setCentralWidget(self.central_widget)
+        self.layout = QVBoxLayout(self.central_widget)
+
+        self.image_label = QLabel()
+        self.layout.addWidget(self.image_label)
+
+        self.gain_slider = QSlider(Qt.Horizontal)
+        self.gain_slider.setMinimum(0)
+        self.gain_slider.setMaximum(20)
+        self.gain_slider.valueChanged.connect(self.update_gain)
+        self.layout.addWidget(self.gain_slider)
+
+        self.exposure_slider = QSlider(Qt.Horizontal)
+        self.exposure_slider.setMinimum(0)
+        self.exposure_slider.setMaximum(100000)
+        self.exposure_slider.valueChanged.connect(self.update_exposure)
+        self.layout.addWidget(self.exposure_slider)
 
         self.camera = None
-        self.image_label = tk.Label(master)
-        self.image_label.pack()
-
-        self.gain_var = tk.DoubleVar()
-        self.exposure_var = tk.DoubleVar()
-
-        self.gain_scale = tk.Scale(master, label="Gain", from_=0, to=20, orient=tk.HORIZONTAL, variable=self.gain_var, command=self.update_gain)
-        self.gain_scale.pack()
-
-        self.exposure_scale = tk.Scale(master, label="Exposure (us)", from_=0, to=100000, orient=tk.HORIZONTAL, variable=self.exposure_var, command=self.update_exposure)
-        self.exposure_scale.pack()
 
         self.initialize_camera()
 
@@ -43,8 +54,8 @@ class CameraGUI:
         while True:
             try:
                 # Get the current gain and exposure values
-                gain = self.gain_var.get()
-                exposure_time = self.exposure_var.get()
+                gain = self.gain_slider.value()
+                exposure_time = self.exposure_slider.value()
 
                 # Set the camera gain and exposure
                 if self.camera is not None:
@@ -58,13 +69,9 @@ class CameraGUI:
                 else:
                     # Convert the image to a format suitable for display
                     image_data = image_result.GetNDArray()
-                    image = Image.fromarray(image_data)
-                    photo = ImageTk.PhotoImage(image=image)
-
-                    # Update the image displayed in the GUI
-                    self.image_label.config(image=photo)
-                    self.image_label.image = photo
-                    self.master.update()
+                    image = QPixmap.fromImage(QImage(image_data, image_data.shape[1], image_data.shape[0], QImage.Format_RGB888))
+                    self.image_label.setPixmap(image)
+                    self.image_label.adjustSize()
 
                 # Release the image
                 image_result.Release()
@@ -80,9 +87,10 @@ class CameraGUI:
         pass  # Exposure time is updated directly within acquire_images()
 
 def main():
-    root = tk.Tk()
-    app = CameraGUI(root)
-    root.mainloop()
+    app = QApplication(sys.argv)
+    gui = CameraGUI()
+    gui.show()
+    sys.exit(app.exec_())
 
 if __name__ == "__main__":
     main()
