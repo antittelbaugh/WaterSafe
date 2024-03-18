@@ -25,7 +25,7 @@ class CameraGUI(QMainWindow):
         self.layout.addWidget(self.gain_slider)
 
         self.exposure_slider = QSlider(Qt.Horizontal)
-        self.exposure_slider.setMinimum(0)
+        self.exposure_slider.setMinimum(69)  # Adjusted minimum value
         self.exposure_slider.setMaximum(100000)
         self.exposure_slider.valueChanged.connect(self.update_exposure)
         self.layout.addWidget(self.exposure_slider)
