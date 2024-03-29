@@ -6,6 +6,7 @@ from skimage.morphology import closing
 import matplotlib.pyplot as plt
 import pandas as pd
 
+fig, (ax1, ax2) = plt.subplots(1, 2)
 img=io.imread('MP_PA_1.jpg')
 img = rgb2gray(img)
 thresh=threshold_mean(img)
@@ -17,7 +18,7 @@ props = regionprops_table(label_image,properties = ['label','feret_diameter_max'
 df = pd.DataFrame(props)
 df['feret_diameter_max'] = df['feret_diameter_max'] * .58
 df = df[df['feret_diameter_max'] >= 17.24]
-hist = df['feret_diameter_max'].hist(bins=10,edgecolor='black')
+hist = plt.hist(df['feret_diameter_max'],bins=10,edgecolor='black')
 plt.xlabel('Size (um)')
 plt.ylabel('Frequency')
 plt.title('Size Distribution')

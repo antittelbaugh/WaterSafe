@@ -1,0 +1,1518 @@
+Font: 8514oem
+  Style: Normal
+    Smooth Sizes: 12
+  Style: Bold
+    Smooth Sizes: 12
+  Style: Italic
+    Smooth Sizes: 12
+  Style: Bold Italic
+    Smooth Sizes: 12
+
+Font: Agency FB
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Algerian
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Arial
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Arial Black
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Arial Narrow
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Arial Rounded MT Bold
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift
+  Style: Normal
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift Condensed
+  Style: Condensed
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Condensed
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift Light
+  Style: Light
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift Light Condensed
+  Style: Light Condensed
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift Light SemiCondensed
+  Style: Light SemiCondensed
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift SemiBold
+  Style: SemiBold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift SemiBold Condensed
+  Style: SemiBold Condensed
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift SemiBold SemiConden
+  Style: SemiBold SemiCondensed
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift SemiCondensed
+  Style: SemiCondensed
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold SemiCondensed
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift SemiLight
+  Style: SemiLight
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift SemiLight Condensed
+  Style: SemiLight Condensed
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bahnschrift SemiLight SemiConde
+  Style: SemiLight SemiCondensed
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Baskerville Old Face
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bauhaus 93
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bell MT
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Berlin Sans FB
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Berlin Sans FB Demi
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bernard MT Condensed
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Blackadder ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bodoni MT
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bodoni MT Black
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bodoni MT Condensed
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bodoni MT Poster Compressed
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Book Antiqua
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bookman Old Style
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bookshelf Symbol 7
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Bradley Hand ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Britannic Bold
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Broadway
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Brush Script MT
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Calibri
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Calibri Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Californian FB
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Calisto MT
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cambria
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cambria Math
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Candara
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Candara Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cascadia Code
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cascadia Code ExtraLight
+  Style: ExtraLight
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: ExtraLight Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cascadia Code Light
+  Style: Light
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Light Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cascadia Code SemiBold
+  Style: SemiBold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: SemiBold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cascadia Code SemiLight
+  Style: SemiLight
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: SemiLight Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cascadia Mono
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cascadia Mono ExtraLight
+  Style: ExtraLight
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: ExtraLight Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cascadia Mono Light
+  Style: Light
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Light Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cascadia Mono SemiBold
+  Style: SemiBold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: SemiBold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cascadia Mono SemiLight
+  Style: SemiLight
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: SemiLight Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Castellar
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Centaur
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Century
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Century Gothic
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Century Schoolbook
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Chiller
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Colonna MT
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Comic Sans MS
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Consolas
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Constantia
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Cooper Black
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Copperplate Gothic Bold
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Copperplate Gothic Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Corbel
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Corbel Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Courier
+  Style: Normal
+    Smooth Sizes: 8 10 12 15
+  Style: Bold
+    Smooth Sizes: 8 10 12 15
+  Style: Italic
+    Smooth Sizes: 8 10 12 15
+  Style: Bold Italic
+    Smooth Sizes: 8 10 12 15
+
+Font: Courier New
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Curlz MT
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Dubai
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Dubai Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Dubai Medium
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Ebrima
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Edwardian Script ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Elephant
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Engravers MT
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Eras Bold ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Eras Demi ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Eras Light ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Eras Medium ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Felix Titling
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Fixedsys
+  Style: Normal
+    Smooth Sizes: 9 12
+  Style: Bold
+    Smooth Sizes: 9 12
+  Style: Italic
+    Smooth Sizes: 9 12
+  Style: Bold Italic
+    Smooth Sizes: 9 12
+
+Font: Footlight MT Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Forte
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Franklin Gothic Book
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Franklin Gothic Demi
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Franklin Gothic Demi Cond
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Franklin Gothic Heavy
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Franklin Gothic Medium
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Franklin Gothic Medium Cond
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Freestyle Script
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: French Script MT
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Gabriola
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Gadugi
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Garamond
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Georgia
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Gigi
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Gill Sans MT
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Gill Sans MT Condensed
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Gill Sans MT Ext Condensed Bold
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Gill Sans Ultra Bold
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Gill Sans Ultra Bold Condensed
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Gloucester MT Extra Condensed
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Goudy Old Style
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Goudy Stout
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Haettenschweiler
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Harlow Solid Italic
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Harrington
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: High Tower Text
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: HoloLens MDL2 Assets
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Impact
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Imprint MT Shadow
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Informal Roman
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Ink Free
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Javanese Text
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Jokerman
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Juice ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Kristen ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Kunstler Script
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Leelawadee
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Leelawadee UI
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Leelawadee UI Semilight
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Lucida Bright
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Demibold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Demibold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Lucida Calligraphy
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Lucida Console
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Lucida Fax
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Demibold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Demibold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Lucida Handwriting
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Lucida Sans
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Demibold Roman
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Demibold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Lucida Sans Typewriter
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Oblique
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Oblique
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Lucida Sans Unicode
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Magneto
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Maiandra GD
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Malgun Gothic
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Malgun Gothic Semilight
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Marlett
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Matura MT Script Capitals
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft Himalaya
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft JhengHei
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft JhengHei Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft JhengHei UI
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft JhengHei UI Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft New Tai Lue
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft PhagsPa
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft Sans Serif
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft Tai Le
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft Uighur
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft YaHei
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft YaHei Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft YaHei UI
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft YaHei UI Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Microsoft Yi Baiti
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: MingLiU-ExtB
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: MingLiU_HKSCS-ExtB
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Mistral
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Modern
+  Style: Normal
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Modern No. 20
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Mongolian Baiti
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Monotype Corsiva
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: MS Gothic
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: MS Outlook
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: MS PGothic
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: MS Reference Sans Serif
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: MS Reference Specialty
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: MS Sans Serif
+  Style: Normal
+    Smooth Sizes: 8 10 12 14 15 17 22 28
+  Style: Bold
+    Smooth Sizes: 8 10 12 14 15 17 22 28
+  Style: Italic
+    Smooth Sizes: 8 10 12 14 15 17 22 28
+  Style: Bold Italic
+    Smooth Sizes: 8 10 12 14 15 17 22 28
+
+Font: MS Serif
+  Style: Normal
+    Smooth Sizes: 6 7 8 10 11 12 13 14 16 20 21 26
+  Style: Bold
+    Smooth Sizes: 6 7 8 10 11 12 13 14 16 20 21 26
+  Style: Italic
+    Smooth Sizes: 6 7 8 10 11 12 13 14 16 20 21 26
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 10 11 12 13 14 16 20 21 26
+
+Font: MS Shell Dlg 2
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: MS UI Gothic
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: MT Extra
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: MV Boli
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Myanmar Text
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Niagara Engraved
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Niagara Solid
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Nirmala UI
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Nirmala UI Semilight
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: NSimSun
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: OCR A Extended
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Old English Text MT
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Onyx
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Palace Script MT
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Palatino Linotype
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Papyrus
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Parchment
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Perpetua
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Perpetua Titling MT
+  Style: Light
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Playbill
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: PMingLiU-ExtB
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Poor Richard
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Pristina
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Rage Italic
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Ravie
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Rockwell
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Rockwell Condensed
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Rockwell Extra Bold
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Roman
+  Style: Normal
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sans Serif Collection
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Script
+  Style: Normal
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Script MT Bold
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe Fluent Icons
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe MDL2 Assets
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe Print
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe Script
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Black
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Emoji
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Historic
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Semibold
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Semilight
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Symbol
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Display
+  Style: Display
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Display Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Display Light
+  Style: Display Light
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Display Semib
+  Style: Display Semibold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Display Semil
+  Style: Display Semilight
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Small
+  Style: Small
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Small Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Small Light
+  Style: Small Light
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Small Semibol
+  Style: Small Semibold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Small Semilig
+  Style: Small Semilight
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Text
+  Style: Text
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Text Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Text Light
+  Style: Text Light
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Text Semibold
+  Style: Text Semibold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Segoe UI Variable Text Semiligh
+  Style: Text Semilight
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Showcard Gothic
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: SimSun
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: SimSun-ExtB
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Banner
+  Style: Banner
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Banner Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Banner Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Banner Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Banner Semibold
+  Style: Banner Semibold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Banner Semibold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Display
+  Style: Display
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Display Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Display Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Display Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Display Semibold
+  Style: Display Semibold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Display Semibold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Heading
+  Style: Heading
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Heading Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Heading Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Heading Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Heading Semibold
+  Style: Heading Semibold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Heading Semibold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Small
+  Style: Small
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Small Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Small Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Small Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Small Semibold
+  Style: Small Semibold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Small Semibold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Subheading
+  Style: Subheading
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Subheading Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Subheading Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Subheading Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Subheading Semibold
+  Style: Subheading Semibold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Subheading Semibold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Text
+  Style: Text
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Text Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Text Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Text Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sitka Text Semibold
+  Style: Text Semibold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Text Semibold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Small Fonts
+  Style: Normal
+    Smooth Sizes: 2 3 4 5 6 7 8
+  Style: Bold
+    Smooth Sizes: 2 3 4 5 6 7 8
+  Style: Italic
+    Smooth Sizes: 2 3 4 5 6 7 8
+  Style: Bold Italic
+    Smooth Sizes: 2 3 4 5 6 7 8
+
+Font: Snap ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Stencil
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Sylfaen
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Symbol
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: System
+  Style: Bold
+    Smooth Sizes: 10 12
+  Style: Bold Italic
+    Smooth Sizes: 10 12
+
+Font: Tahoma
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Tempus Sans ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Terminal
+  Style: Normal
+    Smooth Sizes: 4 5 7 10 11
+  Style: Bold
+    Smooth Sizes: 4 5 7 10 11
+  Style: Italic
+    Smooth Sizes: 4 5 7 10 11
+  Style: Bold Italic
+    Smooth Sizes: 4 5 7 10 11
+
+Font: Times New Roman
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Trebuchet MS
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Tw Cen MT
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Tw Cen MT Condensed
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Tw Cen MT Condensed Extra Bold
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Verdana
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Viner Hand ITC
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Vivaldi
+  Style: Italic
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Vladimir Script
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Webdings
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Wide Latin
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Wingdings
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Wingdings 2
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Wingdings 3
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Yu Gothic
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Yu Gothic Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Yu Gothic Medium
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Yu Gothic UI
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+  Style: Bold
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Yu Gothic UI Light
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Yu Gothic UI Semibold
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+
+Font: Yu Gothic UI Semilight
+  Style: Regular
+    Smooth Sizes: 6 7 8 9 10 11 12 14 16 18 20 22 24 26 28 36 48 72
+

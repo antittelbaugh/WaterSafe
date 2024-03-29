@@ -7,6 +7,7 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
 
+
 class WaterSafeApp(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -54,14 +55,14 @@ class WaterSafeApp(QMainWindow):
         bottom_layout.addWidget(status_bar)
 
         # Sample Image
-        self.sample_image_path = "C:/Users/antit/Desktop/sam.png"  # Replace with the path to your sample image
+        self.sample_image_path = "MP_PA_1.jpg"  # Replace with the path to your sample image
         self.sample_image_label = QLabel()
         self.sample_image_label.setVisible(False)  # Initially set to invisible
 
         # Matplotlib Histogram
         self.canvas = FigureCanvas(Figure())
         self.ax = self.canvas.figure.add_subplot(111)
-        self.canvas.setVisible(False)  # Initially set to invisibl
+        self.canvas.setVisible(False)  # Initially set to invisible
 
         # Top row buttons
         play_button = QPushButton("Run ▶️")
