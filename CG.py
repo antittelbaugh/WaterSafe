@@ -70,7 +70,9 @@ class WaterSafeApp(QMainWindow):
             getimage(cam)
 def setup():
     system =PySpin.System.GetInstance()
-    cam= system.GetCameras()
+    cam_list= system.GetCameras()
+    for i, cam in enumerate(cam_list):
+        cam = cam
     nodemap_tldevice = cam.GetTLDeviceNodeMap()
     cam.Init()
     #nodemap = cam.GetNodeMap()
