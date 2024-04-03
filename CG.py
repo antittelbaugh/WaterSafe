@@ -101,3 +101,8 @@ def getimage(self,cam):
     img =cam.GetNextImage(1000)
     self.image_viewer.imshow(img)
     img.Release()
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    mainWin = WaterSafeApp()
+    sys.exit(app.exec_())
+
