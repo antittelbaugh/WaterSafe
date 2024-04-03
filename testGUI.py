@@ -148,10 +148,10 @@ class WaterSafeApp(QMainWindow):
         # Extract region properties and create histogram
         props = regionprops_table(label_image, properties=['label', 'feret_diameter_max'])
         df = pd.DataFrame(props)
-        df['feret_diameter_max'] = df['feret_diameter_max'] * 0.58
+        df['feret_diameter_max'] = df['feret_diameter_max'] * 1.2
         concentration = len(df['feret_diameter_max'])
         median = np.median(df['feret_diameter_max'])
-        #df = df[df['feret_diameter_max'] >= 17.24]
+        df = df[df['feret_diameter_max'] >= 16.6666]
         self.histogram_viewer.figure.clear()
         ax = self.histogram_viewer.figure.add_subplot(111)
         ax.hist(df['feret_diameter_max'], bins=12, color="#1BDBD6", width = 4)

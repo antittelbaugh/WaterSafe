@@ -137,7 +137,7 @@ def acquire_and_display_images(cam, nodemap, nodemap_tldevice):
         print('Press enter to close the program..')
 
         # Figure(1) is default so you can omit this line. Figure(0) will create a new window every time program hits this line
-        fig = plt.figure(1)
+        fig, ax = plt.figure(1)
 
         # Close the GUI when close event happens
         fig.canvas.mpl_connect('close_event', handle_close)
