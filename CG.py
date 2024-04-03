@@ -54,9 +54,9 @@ class WaterSafeApp(QMainWindow):
         self.setStyleSheet("background-color: #00161A;")
         self.initUI()
         self.show()
-        cam =setup()
+        cam =self.setup()
         while(True):
-            getimage(cam)
+            self.getimage(cam)
     def initUI(self):
         self.image_viewer = ImageViewerWidget(self)
         self.image_viewer.setVisible(True)
@@ -69,42 +69,42 @@ class WaterSafeApp(QMainWindow):
         image_back.show()
         self.image_viewer.raise_()
         
-def setup():
-    system =PySpin.System.GetInstance()
-    cam_list= system.GetCameras()
-    for i, cam in enumerate(cam_list):
-        cam = cam
-    nodemap_tldevice = cam.GetTLDeviceNodeMap()
-    cam.Init()
-    #nodemap = cam.GetNodeMap()
-    sNodemap = cam.GetTLStreamNodeMap()
-    # Change bufferhandling mode to NewestOnly
-    node_bufferhandling_mode = PySpin.CEnumerationPtr(sNodemap.GetNode('StreamBufferHandlingMode'))
-    if not PySpin.IsReadable(node_bufferhandling_mode) or not PySpin.IsWritable(node_bufferhandling_mode):
-        print('Unable to set stream buffer handling mode.. Aborting...')
-        return False
+    def setup():
+        system =PySpin.System.GetInstance()
+        cam_list= system.GetCameras()
+        for i, cam in enumerate(cam_list):
+            cam = cam
+        nodemap_tldevice = cam.GetTLDeviceNodeMap()
+        cam.Init()
+        #nodemap = cam.GetNodeMap()
+        sNodemap = cam.GetTLStreamNodeMap()
+        # Change bufferhandling mode to NewestOnly
+        node_bufferhandling_mode = PySpin.CEnumerationPtr(sNodemap.GetNode('StreamBufferHandlingMode'))
+        if not PySpin.IsReadable(node_bufferhandling_mode) or not PySpin.IsWritable(node_bufferhandling_mode):
+            print('Unable to set stream buffer handling mode.. Aborting...')
+            return False
 
-    # Retrieve entry node from enumeration node
-    node_newestonly = node_bufferhandling_mode.GetEntryByName('NewestOnly')
-    if not PySpin.IsReadable(node_newestonly):
-        print('Unable to set stream buffer handling mode.. Aborting...')
-        return False
+        # Retrieve entry node from enumeration node
+        node_newestonly = node_bufferhandling_mode.GetEntryByName('NewestOnly')
+        if not PySpin.IsReadable(node_newestonly):
+            print('Unable to set stream buffer handling mode.. Aborting...')
+            return False
 
-    # Retrieve integer value from entry node
-    #node_newestonly_mode = node_newestonly.GetValue()
-    cam.BeginAcquisition()
-    device_serial_number = ''
-    node_device_serial_number = PySpin.CStringPtr(nodemap_tldevice.GetNode('DeviceSerialNumber'))
-    if PySpin.IsReadable(node_device_serial_number):
-        device_serial_number = node_device_serial_number.GetValue()
-        print('Device serial number retrieved as %s...' % device_serial_number)
-    return cam
+        # Retrieve integer value from entry node
+        #node_newestonly_mode = node_newestonly.GetValue()
+        cam.BeginAcquisition()
+        device_serial_number = ''
+        node_device_serial_number = PySpin.CStringPtr(nodemap_tldevice.GetNode('DeviceSerialNumber'))
+        if PySpin.IsReadable(node_device_serial_number):
+            device_serial_number = node_device_serial_number.GetValue()
+            print('Device serial number retrieved as %s...' % device_serial_number)
+        return cam
 
 
-def getimage(self,cam):
-    img =cam.GetNextImage(1000)
-    self.image_viewer.imshow(img)
-    img.Release()
+    def getimage(self,cam):
+        img =cam.GetNextImage(1000)
+        self.image_viewer.imshow(img)
+        img.Release()
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     mainWin = WaterSafeApp()
