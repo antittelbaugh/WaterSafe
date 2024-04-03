@@ -54,6 +54,20 @@ class WaterSafeApp(QMainWindow):
         self.setStyleSheet("background-color: #00161A;")
         self.initUI()
         self.show()
+    def initUI(self):
+        self.image_viewer = ImageViewerWidget(self)
+        self.image_viewer.setVisible(True)
+        self.image_viewer.raise_()
+        image_back = QWidget()
+        image_back.setParent(self)
+        image_back.setGeometry(29, 112, 310, 339)
+        image_back.setVisible(True)
+        image_back.setStyleSheet("background: #2A2E34;border : 2px solid black; border-radius : 24px;color: #F3F9F9;")
+        image_back.show()
+        self.image_viewer.raise_()
+        cam =setup()
+        while(True):
+            getimage(cam)
 def setup():
     system =PySpin.System.GetInstance()
     cam= system.GetCameras()
@@ -82,20 +96,7 @@ def setup():
         device_serial_number = node_device_serial_number.GetValue()
         print('Device serial number retrieved as %s...' % device_serial_number)
     return cam
-def initUI(self):
-    self.image_viewer = ImageViewerWidget(self)
-    self.image_viewer.setVisible(True)
-    self.image_viewer.raise_()
-    image_back = QWidget()
-    image_back.setParent(self)
-    image_back.setGeometry(29, 112, 310, 339)
-    image_back.setVisible(True)
-    image_back.setStyleSheet("background: #2A2E34;border : 2px solid black; border-radius : 24px;color: #F3F9F9;")
-    image_back.show()
-    self.image_viewer.raise_()
-    cam =setup()
-    while(True):
-        getimage(cam)
+
 
 def getimage(self,cam):
     img =cam.GetNextImage(1000)
