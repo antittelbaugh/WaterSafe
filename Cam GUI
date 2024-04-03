@@ -1,0 +1,184 @@
+# Import necessary libraries
+import sys
+from PyQt5.QtWidgets import QApplication, QLabel
+from PyQt5.QtGui import QPixmap, QImage
+import numpy as np
+import PySpin
+
+global continue_recording
+continue_recording = True
+
+
+def handle_close():
+    """
+    This function will set the global variable continue_recording to False
+    when the GUI is closed.
+    """
+    global continue_recording
+    continue_recording = False
+
+
+def acquire_and_display_images(cam, nodemap, nodemap_tldevice, label):
+    """
+    This function continuously acquires images from a device and displays them in a PyQt GUI.
+
+    :param cam: Camera to acquire images from.
+    :param nodemap: Device nodemap.
+    :param nodemap_tldevice: Transport layer device nodemap.
+    :param label: QLabel object to display images.
+    """
+    global continue_recording
+
+    sNodemap = cam.GetTLStreamNodeMap()
+
+    # Change bufferhandling mode to NewestOnly
+    node_bufferhandling_mode = PySpin.CEnumerationPtr(sNodemap.GetNode('StreamBufferHandlingMode'))
+    if not PySpin.IsReadable(node_bufferhandling_mode) or not PySpin.IsWritable(node_bufferhandling_mode):
+        print('Unable to set stream buffer handling mode.. Aborting...')
+        return False
+
+    # Retrieve entry node from enumeration node
+    node_newestonly = node_bufferhandling_mode.GetEntryByName('NewestOnly')
+    if not PySpin.IsReadable(node_newestonly):
+        print('Unable to set stream buffer handling mode.. Aborting...')
+        return False
+
+    # Retrieve integer value from entry node
+    node_newestonly_mode = node_newestonly.GetValue()
+
+    # Set integer value from entry node as new value of enumeration node
+    node_bufferhandling_mode.SetIntValue(node_newestonly_mode)
+
+    print('*** IMAGE ACQUISITION ***\n')
+    try:
+        node_acquisition_mode = PySpin.CEnumerationPtr(nodemap.GetNode('AcquisitionMode'))
+        if not PySpin.IsReadable(node_acquisition_mode) or not PySpin.IsWritable(node_acquisition_mode):
+            print('Unable to set acquisition mode to continuous (enum retrieval). Aborting...')
+            return False
+
+        # Retrieve entry node from enumeration node
+        node_acquisition_mode_continuous = node_acquisition_mode.GetEntryByName('Continuous')
+        if not PySpin.IsReadable(node_acquisition_mode_continuous):
+            print('Unable to set acquisition mode to continuous (entry retrieval). Aborting...')
+            return False
+
+        # Retrieve integer value from entry node
+        acquisition_mode_continuous = node_acquisition_mode_continuous.GetValue()
+
+        # Set integer value from entry node as new value of enumeration node
+        node_acquisition_mode.SetIntValue(acquisition_mode_continuous)
+
+        print('Acquisition mode set to continuous...')
+
+        # Begin acquiring images
+        cam.BeginAcquisition()
+
+        print('Acquiring images...')
+
+        while continue_recording:
+            try:
+                image_result = cam.GetNextImage(1000)
+
+                if image_result.IsIncomplete():
+                    print('Image incomplete with image status %d ...' % image_result.GetImageStatus())
+                else:
+                    image_data = image_result.GetNDArray()
+
+                    # Convert numpy array to QImage
+                    h, w = image_data.shape
+                    q_image = QImage(image_data.data, w, h, w, QImage.Format_Grayscale8)
+
+                    # Display image in QLabel
+                    pixmap = QPixmap.fromImage(q_image)
+                    label.setPixmap(pixmap)
+                    label.repaint()
+
+                image_result.Release()
+
+            except PySpin.SpinnakerException as ex:
+                print('Error: %s' % ex)
+                return False
+
+        cam.EndAcquisition()
+
+    except PySpin.SpinnakerException as ex:
+        print('Error: %s' % ex)
+        return False
+
+    return True
+
+
+def run_single_camera(cam, label):
+    """
+    This function runs the example for a single camera.
+
+    :param cam: Camera to run on.
+    :param label: QLabel object to display images.
+    :return: True if successful, False otherwise.
+    """
+    try:
+        result = True
+
+        nodemap_tldevice = cam.GetTLDeviceNodeMap()
+        cam.Init()
+        nodemap = cam.GetNodeMap()
+
+        result &= acquire_and_display_images(cam, nodemap, nodemap_tldevice, label)
+
+        cam.DeInit()
+
+    except PySpin.SpinnakerException as ex:
+        print('Error: %s' % ex)
+        result = False
+
+    return result
+
+
+def main():
+    """
+    This is the main function of the application.
+    """
+    result = True
+
+    # Initialize PyQt application
+    app = QApplication(sys.argv)
+
+    # Create QLabel to display images
+    label = QLabel()
+
+    # Create window and set layout
+    window = QWidget()
+    window.setWindowTitle("Live Image Display")
+    layout = QVBoxLayout()
+    layout.addWidget(label)
+    window.setLayout(layout)
+    window.show()
+
+    # Retrieve singleton reference to system object
+    system = PySpin.System.GetInstance()
+
+    cam_list = system.GetCameras()
+    num_cameras = cam_list.GetSize()
+
+    if num_cameras == 0:
+        cam_list.Clear()
+        system.ReleaseInstance()
+        print('Not enough cameras!')
+        input('Done! Press Enter to exit...')
+        return False
+
+    for i, cam in enumerate(cam_list):
+        print('Running example for camera %d...' % i)
+        result &= run_single_camera(cam, label)
+        print('Camera %d example complete... \n' % i)
+
+    del cam
+    cam_list.Clear()
+    system.ReleaseInstance()
+
+    # Start Qt event loop
+    sys.exit(app.exec_())
+
+
+if __name__ == '__main__':
+    main()
