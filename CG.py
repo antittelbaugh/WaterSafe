@@ -54,6 +54,9 @@ class WaterSafeApp(QMainWindow):
         self.setStyleSheet("background-color: #00161A;")
         self.initUI()
         self.show()
+        cam =setup()
+        while(True):
+            getimage(cam)
     def initUI(self):
         self.image_viewer = ImageViewerWidget(self)
         self.image_viewer.setVisible(True)
@@ -65,9 +68,7 @@ class WaterSafeApp(QMainWindow):
         image_back.setStyleSheet("background: #2A2E34;border : 2px solid black; border-radius : 24px;color: #F3F9F9;")
         image_back.show()
         self.image_viewer.raise_()
-        cam =setup()
-        while(True):
-            getimage(cam)
+        
 def setup():
     system =PySpin.System.GetInstance()
     cam_list= system.GetCameras()
