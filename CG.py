@@ -56,7 +56,7 @@ class WaterSafeApp(QMainWindow):
         self.show()
         cam =self.setup()
         while(True):
-            self.getimage(cam)
+            self.getimage(cam) #are you real you should have self
     def initUI(self):
         self.image_viewer = ImageViewerWidget(self)
         self.image_viewer.setVisible(True)
