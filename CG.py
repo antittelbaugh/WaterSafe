@@ -90,9 +90,31 @@ class WaterSafeApp(QMainWindow):
         if not PySpin.IsReadable(node_newestonly):
             print('Unable to set stream buffer handling mode.. Aborting...')
             return False
+        node_newestonly_mode = node_newestonly.GetValue()
+
+        # Set integer value from entry node as new value of enumeration node
+        node_bufferhandling_mode.SetIntValue(node_newestonly_mode)
+
 
         # Retrieve integer value from entry node
         #node_newestonly_mode = node_newestonly.GetValue()
+        node_acquisition_mode = PySpin.CEnumerationPtr(nodemap.GetNode('AcquisitionMode'))
+        if not PySpin.IsReadable(node_acquisition_mode) or not PySpin.IsWritable(node_acquisition_mode):
+            print('Unable to set acquisition mode to continuous (enum retrieval). Aborting...')
+            return False
+
+        # Retrieve entry node from enumeration node
+        node_acquisition_mode_continuous = node_acquisition_mode.GetEntryByName('Continuous')
+        if not PySpin.IsReadable(node_acquisition_mode_continuous):
+            print('Unable to set acquisition mode to continuous (entry retrieval). Aborting...')
+            return False
+
+        # Retrieve integer value from entry node
+        acquisition_mode_continuous = node_acquisition_mode_continuous.GetValue()
+
+        # Set integer value from entry node as new value of enumeration node
+        node_acquisition_mode.SetIntValue(acquisition_mode_continuous)
+
         cam.BeginAcquisition()
         device_serial_number = ''
         node_device_serial_number = PySpin.CStringPtr(nodemap_tldevice.GetNode('DeviceSerialNumber'))
@@ -103,6 +125,7 @@ class WaterSafeApp(QMainWindow):
 
 
     def getimage(self,cam):
+        print("image display")
         img =cam.GetNextImage(1000)
         self.image_viewer.imshow(img)
         img.Release()
