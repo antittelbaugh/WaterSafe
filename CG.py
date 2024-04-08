@@ -70,7 +70,7 @@ class WaterSafeApp(QMainWindow):
         image_back.show()
         self.image_viewer.raise_()
         
-    def setup():
+    def setup(self):
         system =PySpin.System.GetInstance()
         cam_list= system.GetCameras()
         for i, cam in enumerate(cam_list):
