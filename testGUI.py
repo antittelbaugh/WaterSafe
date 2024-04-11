@@ -15,6 +15,7 @@ from skimage.measure import label, regionprops_table
 from skimage.morphology import closing
 from PyQt5.QtWidgets import QGroupBox
 import pandas as pd
+from CameraViewLayout import CameraViewLayout
 
 
 class ImageViewerWidget(FigureCanvas):
@@ -46,11 +47,12 @@ class WaterSafeApp(QMainWindow):
         self.setGeometry(0, 0, 800, 480)
         self.setStyleSheet("background-color: #00161A;")
         self.initUI()
-        self.show()
+        self.showFullScreen()
 
     def initUI(self):
 
         # Sample Image and Matplotlib Histogram
+        self.camera_view_layout = CameraViewLayout(self)
         self.image_viewer = ImageViewerWidget(self)
         self.image_viewer.setVisible(True)
         self.image_viewer.raise_()
@@ -186,7 +188,9 @@ class WaterSafeApp(QMainWindow):
 
     def on_run_clicked(self):
         # Call the custom function to create the labeled image and graph
-        self.create_image_and_graph()
+        self.camera_view_layout.showFullScreen()
+        self.hide()
+        #self.create_image_and_graph()
 
     def on_info_clicked(self):
         print("Info button clicked")
