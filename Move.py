@@ -101,7 +101,7 @@ class Move(QMainWindow):
         if self.i == 6:
             self.i =0
             self.text_label.setText(f"<center>Adjust both knobs to 0 <br> Click Done to continue")
-            self.main_app.showFullscreen()
+            self.main_app.showFullScreen()
            
             self.main_app.create_image_and_graph()
             self.hide()
