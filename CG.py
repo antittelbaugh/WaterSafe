@@ -77,7 +77,7 @@ class WaterSafeApp(QMainWindow):
             cam = cam
         nodemap_tldevice = cam.GetTLDeviceNodeMap()
         cam.Init()
-        #nodemap = cam.GetNodeMap()
+        nodemap = cam.GetNodeMap()
         sNodemap = cam.GetTLStreamNodeMap()
         # Change bufferhandling mode to NewestOnly
         node_bufferhandling_mode = PySpin.CEnumerationPtr(sNodemap.GetNode('StreamBufferHandlingMode'))
