@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-import time
+#import time
 
 # Set up the GPIO mode
 GPIO.setmode(GPIO.BCM)
@@ -29,11 +29,11 @@ if __name__ == "__main__":
     try:
         # Turn on the LED
         turn_on_led()
-        time.sleep(2)  # Leave the LED on for 2 seconds
+        #time.sleep(2)  # Leave the LED on for 2 seconds
         
         # Turn off the LED
-        turn_off_led()
-        time.sleep(2)  # Leave the LED off for 2 seconds
+        #turn_off_led()
+        #time.sleep(2)  # Leave the LED off for 2 seconds
         
     except KeyboardInterrupt:
         pass  # If the script is interrupted by the user
