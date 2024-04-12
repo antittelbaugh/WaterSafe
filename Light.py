@@ -29,4 +29,4 @@ if __name__ == "__main__":
         pass  # If the script is interrupted by the user
     
     # Clean up the GPIO settings
-    GPIO.cleanup()
+    #GPIO.cleanup()
