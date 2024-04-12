@@ -1,32 +1,21 @@
-from gpiozero import LED
-#import time
+import time
+import lgpio
 
-# Set up the GPIO mode
-led = LED(17)
-def turn_on_led():
-    led.on()
-    #GPIO.output(ground_pin, GPIO.LOW)
-    print("LED is ON")
+LED = 23
 
-# Function to turn off the LED
-def turn_off_led():
-    led.off()
-    #GPIO.output(ground_pin, GPIO.HIGH)
-    print("LED is OFF")
+# open the gpio chip and set the LED pin as output
+h = lgpio.gpiochip_open(0)
+lgpio.gpio_claim_output(h, LED)
 
-# Test the functions
-if __name__ == "__main__":
-    try:
-        # Turn on the LED
-        turn_on_led()
-        #time.sleep(2)  # Leave the LED on for 2 seconds
-        
-        # Turn off the LED
-        #turn_off_led()
-        #time.sleep(2)  # Leave the LED off for 2 seconds
-        
-    except KeyboardInterrupt:
-        pass  # If the script is interrupted by the user
-    
-    # Clean up the GPIO settings
-    #GPIO.cleanup()
+try:
+    while True:
+        # Turn the GPIO pin on
+        lgpio.gpio_write(h, LED, 1)
+        time.sleep(1)
+
+        # Turn the GPIO pin off
+        lgpio.gpio_write(h, LED, 0)
+        time.sleep(1)
+except KeyboardInterrupt:
+    lgpio.gpio_write(h, LED, 0)
+    lgpio.gpiochip_close(h)
