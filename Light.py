@@ -11,16 +11,3 @@ def turn_on_led():
 def turn_off_led():
     lgpio.gpio_write(h, LED, 0)
 
-
-try:
-    while True:
-        # Turn the GPIO pin on
-        lgpio.gpio_write(h, LED, 1)
-        time.sleep(1)
-
-        # Turn the GPIO pin off
-        lgpio.gpio_write(h, LED, 0)
-        time.sleep(1)
-except KeyboardInterrupt:
-    lgpio.gpio_write(h, LED, 0)
-    lgpio.gpiochip_close(h)
