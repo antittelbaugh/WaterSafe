@@ -6,6 +6,11 @@ LED = 23
 # open the gpio chip and set the LED pin as output
 h = lgpio.gpiochip_open(0)
 lgpio.gpio_claim_output(h, LED)
+def turn_on_led():
+    lgpio.gpio_write(h, LED, 1)
+def turn_off_led():
+    lgpio.gpio_write(h, LED, 0)
+
 
 try:
     while True:
