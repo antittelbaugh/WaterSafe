@@ -2,7 +2,7 @@ from gpiozero import LED
 #import time
 
 # Set up the GPIO mode
-led = LED(19)
+led = LED(17)
 def turn_on_led():
     led.on()
     #GPIO.output(ground_pin, GPIO.LOW)
