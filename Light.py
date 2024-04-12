@@ -1,26 +1,16 @@
-import RPi.GPIO as GPIO
+from gpiozero import LED
 #import time
 
 # Set up the GPIO mode
-GPIO.setmode(GPIO.BCM)
-
-# Define the GPIO pins for power and ground
-power_pin = 19
-ground_pin = 6
-
-# Set up the GPIO pins
-GPIO.setup(power_pin, GPIO.OUT)  # Power pin set as output
-#GPIO.setup(ground_pin, GPIO.OUT) # Ground pin set as output
-
-# Function to turn on the LED
+led = LED(19)
 def turn_on_led():
-    GPIO.output(power_pin, GPIO.HIGH)
+    led.on()
     #GPIO.output(ground_pin, GPIO.LOW)
     print("LED is ON")
 
 # Function to turn off the LED
 def turn_off_led():
-    GPIO.output(power_pin, GPIO.LOW)
+    led.off()
     #GPIO.output(ground_pin, GPIO.HIGH)
     print("LED is OFF")
 
