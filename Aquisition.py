@@ -195,7 +195,7 @@ def acquire_images(cam, nodemap, nodemap_tldevice, filename):
             device_serial_number = node_device_serial_number.GetValue()
             print('Device serial number retrieved as %s...' % device_serial_number)
         processor = PySpin.ImageProcessor()
-        processor.SetColorProcessing(PySpin.SPINNAKER_COLOR_PROCESSING_ALGORITHIM_HQ_LINEAR)
+        processor.SetColorProcessing(PySpin.SPINNAKER_COLOR_PROCESSING_ALGORITHM_HQ_LINEAR)
         # Retrieve, convert, and save images
         for i in range(NUM_IMAGES):
             try:
