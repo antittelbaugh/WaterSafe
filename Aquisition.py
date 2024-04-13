@@ -381,7 +381,7 @@ def main():
     :return: True if successful, False otherwise.
     :rtype: bool
     """
-
+    result = True
     # Since this application saves images in the current folder
     # we must ensure that we have permission to write to this folder.
     # If we do not have permission, fail right away.
