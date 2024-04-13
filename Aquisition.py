@@ -458,7 +458,7 @@ def main():
     # we must ensure that we have permission to write to this folder.
     # If we do not have permission, fail right away.
     
-    result &= run_single_camera("Test.jpg", 1000, 15)
+    result &= run_single_camera("Test.jpg", 10000, 18)
     
     # Release reference to camera
     # NOTE: Unlike the C++ examples, we cannot rely on pointer objects being automatically
