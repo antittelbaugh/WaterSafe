@@ -134,10 +134,10 @@ class CameraViewLayout(QMainWindow):
         self.exposure_label = exposure_label
         run_single_camera('Test.jpg', self.exposure, self.gain)
         img = io.imread('Test.jpg')
-        img = rgb2gray(img)
+        #hellO?????
         #thresh = threshold_otsu(img)
         #bw = closing(img > thresh)
-        #label_image = label(bw)
+        #label_image = label(bw)ss
         #labeled_img = label2rgb(label_image, image=img, bg_label=0)
 
         # Display the labeled image
@@ -176,7 +176,7 @@ class CameraViewLayout(QMainWindow):
     def on_save_clicked(self):
         run_single_camera('Test.jpg', self.exposure, self.gain)
         img = io.imread('Test.jpg')
-        img = rgb2gray(img)
+        
         self.image_viewer.imshow(img)
 
     def on_gain_changed(self, value):
