@@ -111,7 +111,7 @@ class CameraViewLayout(QMainWindow):
 
         # Exposure time slider
         exposure_slider = QSlider(Qt.Horizontal)
-        exposure_slider.setRange(500, 1000000)
+        exposure_slider.setRange(500, 100000)
         exposure_slider.setValue(8000)
         exposure_slider.valueChanged.connect(self.on_exposure_changed)
         exposure_label = QLabel(f"Exposure Time: {exposure_slider.value()} ms")
