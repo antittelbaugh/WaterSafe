@@ -14,6 +14,7 @@ from skimage.measure import label, regionprops_table
 from skimage.morphology import closing
 import pandas as pd
 from Move import Move
+from Aquisition import run_single_camera
 
 
 class ImageViewerWidget(FigureCanvas):
@@ -107,10 +108,10 @@ class CameraViewLayout(QMainWindow):
 
         # Exposure time slider
         exposure_slider = QSlider(Qt.Horizontal)
-        exposure_slider.setRange(0, 100)
-        exposure_slider.setValue(50)
+        exposure_slider.setRange(100, 10000)
+        exposure_slider.setValue(5050)
         exposure_slider.valueChanged.connect(self.on_exposure_changed)
-        exposure_label = QLabel(f"Exposure Time: {exposure_slider.value()}")
+        exposure_label = QLabel(f"Exposure Time: {exposure_slider.value()} ms")
         exposure_label.setAlignment(Qt.AlignCenter)
         exposure_label.setStyleSheet("background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #E537B3, stop: 1 #DE76DE); border: 2px solid black; border-radius: 24px; color: #F3F9F9")
 
