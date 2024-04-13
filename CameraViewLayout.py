@@ -46,9 +46,10 @@ class CameraViewLayout(QMainWindow):
         self.setWindowTitle("WATER-SAFE: Microplastic Detection and PFAS Collection")
         self.setGeometry(0, 0, 800, 480)
         self.setStyleSheet("background-color: #00161A;")
-        self.initUI()
         self.exposure = 8000
         self.gain = 27
+        self.initUI()
+        
         self.showFullScreen()
 
     def initUI(self):
