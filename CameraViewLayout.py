@@ -47,6 +47,8 @@ class CameraViewLayout(QMainWindow):
         self.setGeometry(0, 0, 800, 480)
         self.setStyleSheet("background-color: #00161A;")
         self.initUI()
+        self.exposure = 8000
+        self.gain = 27
         self.showFullScreen()
 
     def initUI(self):
@@ -99,8 +101,8 @@ class CameraViewLayout(QMainWindow):
 
         # Gain slider
         gain_slider = QSlider(Qt.Horizontal)
-        gain_slider.setRange(0, 100)
-        gain_slider.setValue(50)
+        gain_slider.setRange(0, 27)
+        gain_slider.setValue(18)
         gain_slider.valueChanged.connect(self.on_gain_changed)
         gain_label = QLabel(f"Gain: {gain_slider.value()}")
         gain_label.setAlignment(Qt.AlignCenter)
@@ -108,8 +110,8 @@ class CameraViewLayout(QMainWindow):
 
         # Exposure time slider
         exposure_slider = QSlider(Qt.Horizontal)
-        exposure_slider.setRange(100, 10000)
-        exposure_slider.setValue(5050)
+        exposure_slider.setRange(500, 1000000)
+        exposure_slider.setValue(8000)
         exposure_slider.valueChanged.connect(self.on_exposure_changed)
         exposure_label = QLabel(f"Exposure Time: {exposure_slider.value()} ms")
         exposure_label.setAlignment(Qt.AlignCenter)
@@ -129,8 +131,9 @@ class CameraViewLayout(QMainWindow):
         self.gain_label = gain_label
         self.exposure_slider = exposure_slider
         self.exposure_label = exposure_label
-        img = io.imread('PET_b_n_1.jpeg')
-        #img = rgb2gray(img)
+        run_single_camera('Test.jpg', self.exposure, self.gain)
+        img = io.imread('Test.jpg')
+        img = rgb2gray(img)
         #thresh = threshold_otsu(img)
         #bw = closing(img > thresh)
         #label_image = label(bw)
@@ -151,7 +154,6 @@ class CameraViewLayout(QMainWindow):
     def on_run_clicked(self):
         # Call the custom function to create the labeled image and graph
         #self.create_image_and_graph()
-        img = io.imread('PET_b_n_1.jpeg')
         #img = rgb2gray(img)
         #thresh = threshold_otsu(img)
         #bw = closing(img > thresh)
@@ -159,7 +161,7 @@ class CameraViewLayout(QMainWindow):
         #labeled_img = label2rgb(label_image, image=img, bg_label=0)
 
         # Display the labeled image
-        self.image_viewer.imshow(img)
+        
         self.hide()
         self.mover.showFullScreen()
 
@@ -171,14 +173,18 @@ class CameraViewLayout(QMainWindow):
         print("Help button clicked")
 
     def on_save_clicked(self):
-        img = io.imread('PET_g_n_1.jpeg')
+        run_single_camera('Test.jpg', self.exposure, self.gain)
+        img = io.imread('Test.jpg')
+        img = rgb2gray(img)
         self.image_viewer.imshow(img)
 
     def on_gain_changed(self, value):
         self.gain_label.setText(f"Gain: {value}")
+        self.gain = value
 
     def on_exposure_changed(self, value):
         self.exposure_label.setText(f"Exposure Time: {value}")
+        self.exposure = value
 
 
 if __name__ == '__main__':
