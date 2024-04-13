@@ -36,6 +36,76 @@ import os
 import PySpin
 
 NUM_IMAGES = 1  # number of images to grab
+def configure_gain(cam, gain):
+    """
+     This function configures a custom exposure time. Automatic exposure is turned
+     off in order to allow for the customization, and then the custom setting is
+     applied.
+
+     :param cam: Camera to configure exposure for.
+     :type cam: CameraPtr
+     :return: True if successful, False otherwise.
+     :rtype: bool
+    """
+
+    print('*** CONFIGURING EXPOSURE ***\n')
+
+    try:
+        result = True
+
+        # Turn off automatic exposure mode
+        #
+        # *** NOTES ***
+        # Automatic exposure prevents the manual configuration of exposure
+        # times and needs to be turned off for this example. Enumerations
+        # representing entry nodes have been added to QuickSpin. This allows
+        # for the much easier setting of enumeration nodes to new values.
+        #
+        # The naming convention of QuickSpin enums is the name of the
+        # enumeration node followed by an underscore and the symbolic of
+        # the entry node. Selecting "Off" on the "ExposureAuto" node is
+        # thus named "ExposureAuto_Off".
+        #
+        # *** LATER ***
+        # Exposure time can be set automatically or manually as needed. This
+        # example turns automatic exposure off to set it manually and back
+        # on to return the camera to its default state.
+
+        if cam.GainAuto.GetAccessMode() != PySpin.RW:
+            print('Unable to disable automatic exposure. Aborting...')
+            return False
+
+        cam.GainAuto.SetValue(PySpin.GainAuto_Off)
+        print('Automatic exposure disabled...')
+
+        # Set exposure time manually; exposure time recorded in microseconds
+        #
+        # *** NOTES ***
+        # Notice that the node is checked for availability and writability
+        # prior to the setting of the node. In QuickSpin, availability and
+        # writability are ensured by checking the access mode.
+        #
+        # Further, it is ensured that the desired exposure time does not exceed
+        # the maximum. Exposure time is counted in microseconds - this can be
+        # found out either by retrieving the unit with the GetUnit() method or
+        # by checking SpinView.
+
+        if cam.Gain.GetAccessMode() != PySpin.RW:
+            print('Unable to set exposure time. Aborting...')
+            return False
+
+        # Ensure desired exposure time does not exceed the maximum
+        gain_to_set = gain
+        gain_to_set = min(cam.Gain.GetMax(), gain_to_set)
+        cam.Gain.SetValue(gain_to_set)
+        print('Shutter time set to %s us...\n' % gain_to_set)
+
+    except PySpin.SpinnakerException as ex:
+        print('Error: %s' % ex)
+        result = False
+
+    return result
+
 def configure_exposure(cam, exposureTime):
     """
      This function configures a custom exposure time. Automatic exposure is turned
@@ -320,7 +390,7 @@ def print_device_info(nodemap):
     return result
 
 
-def run_single_camera( filename, exposure):
+def run_single_camera( filename, exposure,gain):
     """
     This function acts as the body of the example; please see NodeMapInfo example
     for more in-depth comments on setting up cameras.
@@ -354,6 +424,7 @@ def run_single_camera( filename, exposure):
         cam.Init()
 
         configure_exposure(cam,exposure)
+        configure_gain(cam,gain)
         # Retrieve GenICam nodemap
         nodemap = cam.GetNodeMap()
 
@@ -387,7 +458,7 @@ def main():
     # we must ensure that we have permission to write to this folder.
     # If we do not have permission, fail right away.
     
-    result &= run_single_camera("Test.jpg", 1000)
+    result &= run_single_camera("Test.jpg", 1000, 15)
     
     # Release reference to camera
     # NOTE: Unlike the C++ examples, we cannot rely on pointer objects being automatically
