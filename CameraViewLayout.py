@@ -163,6 +163,7 @@ class CameraViewLayout(QMainWindow):
 
         # Display the labeled image
         
+        self.mover.setExposureandGain(self.exposure,self.gain)
         
         self.hide()
         self.mover.showFullScreen()

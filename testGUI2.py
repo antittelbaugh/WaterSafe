@@ -139,8 +139,8 @@ class WaterSafeApp(QMainWindow):
     def create_image_and_graph(self):
         
         # Load image and perform processing
-        img = io.imread('Test.jpg')
-        img = rgb2gray(img)
+        img = io.imread('combined_image.jpg')
+        #img = rgb2gray(img)
         thresh = threshold_otsu(img)
         bw = closing(img > thresh)
         label_image = label(bw)
