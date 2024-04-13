@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 #fig, (ax1, ax2) = plt.subplots(1, 2)
-img=io.imread('M_3.jpg')
+img=io.imread('Test.jpg')
 #img = rgb2gray(img)
 thresh=threshold_otsu(img)
 bw=closing(img > thresh)
