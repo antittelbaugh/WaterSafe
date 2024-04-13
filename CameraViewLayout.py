@@ -163,6 +163,7 @@ class CameraViewLayout(QMainWindow):
 
         # Display the labeled image
         
+        
         self.hide()
         self.mover.showFullScreen()
 
@@ -174,10 +175,12 @@ class CameraViewLayout(QMainWindow):
         print("Help button clicked")
 
     def on_save_clicked(self):
+        self.text_label.setText(f"<center> Taking image")
         run_single_camera('Test.jpg', self.exposure, self.gain)
         img = io.imread('Test.jpg')
         
         self.image_viewer.imshow(img)
+        self.text_label.setText(f"<center> Adjust Gain and exposure to desired and tap Apply <br> Click OK to continue")
 
     def on_gain_changed(self, value):
         self.gain_label.setText(f"Gain: {value}")
