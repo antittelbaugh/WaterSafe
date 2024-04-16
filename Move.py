@@ -14,6 +14,8 @@ from skimage.measure import label, regionprops_table
 from skimage.morphology import closing
 import pandas as pd
 from Aquisition import run_single_camera
+from PutTo import combine
+from circle import circle
 
 
 class ImageViewerWidget(FigureCanvas):
@@ -114,6 +116,8 @@ class Move(QMainWindow):
             self.text_label.setText(f"<center>Adjust both knobs to 0 <br> Click Done to continue")
             self.main_app.showFullScreen()
             run_single_camera('6.jpg',self.exposure,self.gain)
+            combine()
+            circle()
             self.main_app.create_image_and_graph()
             self.hide()
         
