@@ -139,6 +139,7 @@ class WaterSafeApp(QMainWindow):
     def create_image_and_graph(self):
         
         # Load image and perform processing
+        turn_off_led()
         img = io.imread('output_image.jpg')
         #img = rgb2gray(img)
         thresh = threshold_otsu(img)
