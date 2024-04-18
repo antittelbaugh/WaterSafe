@@ -54,7 +54,7 @@ class WaterSafeApp(QMainWindow):
     def initUI(self):
 
         # Sample Image and Matplotlib Histogram
-        self.camera_view_layout = CameraViewLayout(self)
+        
         self.image_viewer = ImageViewerWidget(self)
         self.image_viewer.setVisible(True)
         self.image_viewer.raise_()
@@ -139,7 +139,7 @@ class WaterSafeApp(QMainWindow):
     def create_image_and_graph(self):
         
         # Load image and perform processing
-        img = io.imread('combined_image.jpg')
+        img = io.imread('output_image.jpg')
         #img = rgb2gray(img)
         thresh = threshold_otsu(img)
         bw = closing(img > thresh)
@@ -192,6 +192,7 @@ class WaterSafeApp(QMainWindow):
     def on_run_clicked(self):
         # Call the custom function to create the labeled image and graph
         turn_on_led()
+        self.camera_view_layout = CameraViewLayout(self)
         self.camera_view_layout.showFullScreen()
         self.hide()
         #self.create_image_and_graph()

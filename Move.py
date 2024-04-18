@@ -59,9 +59,6 @@ class Move(QMainWindow):
 
     def initUI(self):
         # Sample Image and Matplotlib Histogram
-        self.image_viewer = ImageViewerWidget(self)
-        self.image_viewer.setVisible(True)
-        self.image_viewer.raise_()
 
         # Top row buttons
         play_button = QPushButton("Done", self)
