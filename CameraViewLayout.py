@@ -87,11 +87,11 @@ class CameraViewLayout(QMainWindow):
 
         green_button = QPushButton("Green Light", self)
         green_button.setStyleSheet("background: #1A4833; border: 2px solid black; border-radius: 24px; color: #F3F9F9")
-        green_button.setGeometry(369, 36, 140, 48)
+        green_button.setGeometry(369, 36, 100, 48)
 
-        blue_button = QPushButton("Green Light", self)
-        blue_button.setStyleSheet("background: #1A4833; border: 2px solid black; border-radius: 24px; color: #F3F9F9")
-        blue_button.setGeometry(539, 36, 140, 48)
+        blue_button = QPushButton("Blue Light", self)
+        blue_button.setStyleSheet("background: #0063A6; border: 2px solid black; border-radius: 24px; color: #F3F9F9")
+        blue_button.setGeometry(500, 36, 100, 48)
 
         # Connect button signals to functions
         play_button.clicked.connect(self.on_run_clicked)
