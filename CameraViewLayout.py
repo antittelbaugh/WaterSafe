@@ -176,7 +176,6 @@ class CameraViewLayout(QMainWindow):
         print("Help button clicked")
 
     def on_save_clicked(self):
-        self.text_label.setText(f"<center> Taking image")
         run_single_camera('Test.jpg', self.exposure, self.gain)
         img = io.imread('Test.jpg')
         

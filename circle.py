@@ -28,4 +28,4 @@ def circle():
     black_background.save('output_image.jpg')
 
     # Display the result
-    #black_background.show()
+    black_background.show()

@@ -6,12 +6,12 @@ def combine():
 
     # List of image file paths (change these to your images)
     image_paths = [
-        '1.jpg',
-        '6.jpg',
-        '2.jpg',
-        '5.jpg',
-        '3.jpg',
-        '4.jpg',
+        'C_1.jpeg',
+        'C_6.jpeg',
+        'C_2.jpeg',
+        'C_5.jpeg',
+        'C_3.jpeg',
+        'C_4.jpeg',
     ]
 
     # Load the images
@@ -42,5 +42,6 @@ def combine():
 
     # Save the final combined image
     final_image.save('combined_image.jpg')
+
 
     

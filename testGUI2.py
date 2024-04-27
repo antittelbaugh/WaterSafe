@@ -17,6 +17,8 @@ from PyQt5.QtWidgets import QGroupBox
 import pandas as pd
 from CameraViewLayout import CameraViewLayout
 from Light import turn_off_led,turn_on_led
+#from PutTo import combine
+#from circle import circle
 
 
 class ImageViewerWidget(FigureCanvas):
@@ -49,7 +51,8 @@ class WaterSafeApp(QMainWindow):
         self.setGeometry(0, 0, 800, 480)
         self.setStyleSheet("background-color: #00161A;")
         self.initUI()
-        self.showFullScreen()
+        self.show()
+        #self.showFullScreen()
 
     def initUI(self):
 
@@ -139,24 +142,16 @@ class WaterSafeApp(QMainWindow):
     def create_image_and_graph(self):
         
         # Load image and perform processing
-        turn_off_led()
-        img = io.imread('output_image.jpg')
-        #img = rgb2gray(img)
-        thresh = threshold_otsu(img)
-        bw = closing(img > thresh)
-        label_image = label(bw)
-        labeled_img = label2rgb(label_image, image=img, bg_label=0)
+       # turn_off_led()
+        labeled_img = np.load('demo_image.npy')
 
         # Display the labeled image
         self.image_viewer.imshow(labeled_img)
 
         # Extract region properties and create histogram
-        props = regionprops_table(label_image, properties=['label', 'feret_diameter_max'])
-        df = pd.DataFrame(props)
-        df['feret_diameter_max'] = df['feret_diameter_max'] * 1.2
+        df = pd.read_pickle('data.pkl')
         concentration = len(df['feret_diameter_max'])
         median = np.median(df['feret_diameter_max'])
-        df = df[df['feret_diameter_max'] >= 16.6666]
         self.histogram_viewer.figure.clear()
         ax = self.histogram_viewer.figure.add_subplot(111)
         ax.hist(df['feret_diameter_max'], bins=12, color="#1BDBD6", width = 4)
@@ -187,7 +182,7 @@ class WaterSafeApp(QMainWindow):
         # Print geometry of QGroupBox (self.group_layout)
         #print("QGroupBox geometry:", self.group_layout.geometry())
         self.text_label.setText(f"<center>Concentration: {concentration} ppl <br>Median Size: {median:.2f}  um")
-        turn_off_led()
+        #turn_off_led()
         
 
     def on_run_clicked(self):

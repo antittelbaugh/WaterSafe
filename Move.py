@@ -94,27 +94,19 @@ class Move(QMainWindow):
         #self.create_image_and_graph()
         self.i += 1
         if self.i == 1:
-            run_single_camera('1.jpg',self.exposure,self.gain)
             self.text_label.setText(f"<center>Adjust the bottom knob to 4.38mm <br> Click Done to continue")
         if self.i ==2:
-            run_single_camera('2.jpg',self.exposure,self.gain)
             self.text_label.setText(f"<center>Adjust the bottom knob to 8.76mm <br> Click Done to continue")
         if self.i ==3:
-            run_single_camera('3.jpg',self.exposure,self.gain)
             self.text_label.setText(f"<center>Adjust the right knob to 6.57mm <br> Click Done to continue")
         if self.i == 4:
-            run_single_camera('4.jpg',self.exposure,self.gain)
             self.text_label.setText(f"<center>Adjust the bottom knob to 4.38mm <br> Click Done to continue")
         if self.i == 5:
-            run_single_camera('5.jpg',self.exposure,self.gain)
             self.text_label.setText(f"<center>Adjust the bottom knob to 0mm <br> Click Done to continue")
         if self.i == 6:
             self.i =0
             self.text_label.setText(f"<center>Adjust both knobs to 0 <br> Click Done to continue")
             self.main_app.showFullScreen()
-            run_single_camera('6.jpg',self.exposure,self.gain)
-            combine()
-            circle()
             self.main_app.create_image_and_graph()
             self.hide()
         
