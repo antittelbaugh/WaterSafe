@@ -149,8 +149,9 @@ class WaterSafeApp(QMainWindow):
         thresh = threshold_otsu(img)
         bw = closing(img > thresh)
         label_image = label(bw)
+        labeled_img = label2rgb(label_image, image=img, bg_label=0)
         np.save('demo_image', labeled_img)
-
+        
         # Display the labeled image
         self.image_viewer.imshow(labeled_img)
 
@@ -159,7 +160,7 @@ class WaterSafeApp(QMainWindow):
         df = pd.DataFrame(props)
         df['feret_diameter_max'] = df['feret_diameter_max'] * 1.2
         df = df[df['feret_diameter_max'] >= 10]
-
+        df.to_pickle('data.pkl')
         concentration = len(df['feret_diameter_max'])
         median = np.median(df['feret_diameter_max'])
         self.histogram_viewer.figure.clear()
