@@ -149,7 +149,6 @@ class WaterSafeApp(QMainWindow):
         thresh = threshold_otsu(img)
         bw = closing(img > thresh)
         label_image = label(bw)
-        labeled_img = np.load('demo_image.npy')
         np.save('demo_image', labeled_img)
 
         # Display the labeled image
