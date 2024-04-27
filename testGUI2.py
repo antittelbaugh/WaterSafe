@@ -15,10 +15,10 @@ from skimage.measure import label, regionprops_table
 from skimage.morphology import closing
 from PyQt5.QtWidgets import QGroupBox
 import pandas as pd
-from CameraViewLayout import CameraViewLayout
-from Light import turn_off_led,turn_on_led
-#from PutTo import combine
-#from circle import circle
+#from CameraViewLayout import CameraViewLayout
+#from Light import turn_off_led,turn_on_led
+from PutTo import combine
+from circle import circle
 
 
 class ImageViewerWidget(FigureCanvas):
@@ -143,13 +143,25 @@ class WaterSafeApp(QMainWindow):
         
         # Load image and perform processing
        # turn_off_led()
-        labeled_img = np.load('demo_image.npy')
+        combine()
+        circle()
+        img = io.imread('output_image.jpg')
+        img = rgb2gray(img)
+        thresh = threshold_otsu(img)
+        bw = closing(img > thresh)
+        label_image = label(bw)
+        labeled_img = label2rgb(label_image, image=img, bg_label=0)
+        np.save('demo_image', labeled_img)
 
         # Display the labeled image
         self.image_viewer.imshow(labeled_img)
 
         # Extract region properties and create histogram
-        df = pd.read_pickle('data.pkl')
+        props = regionprops_table(label_image, properties=['label', 'feret_diameter_max'])
+        df = pd.DataFrame(props)
+        df['feret_diameter_max'] = df['feret_diameter_max'] * 1.2
+        df = df[df['feret_diameter_max'] >= 10]
+        df.to_pickle('data.pkl')
         concentration = len(df['feret_diameter_max'])
         median = np.median(df['feret_diameter_max'])
         self.histogram_viewer.figure.clear()
@@ -206,4 +218,5 @@ class WaterSafeApp(QMainWindow):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     mainWin = WaterSafeApp()
+    mainWin.create_image_and_graph()
     sys.exit(app.exec_())
