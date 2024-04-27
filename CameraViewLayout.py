@@ -85,6 +85,14 @@ class CameraViewLayout(QMainWindow):
         save_button.setStyleSheet("background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #30333A, stop: 1 #545B64); border: 2px solid black; border-radius: 24px; color: #F3F9F9")
         save_button.setGeometry(199, 36, 140, 48)
 
+        green_button = QPushButton("Green Light", self)
+        green_button.setStyleSheet("background: #1A4833; border: 2px solid black; border-radius: 24px; color: #F3F9F9")
+        green_button.setGeometry(369, 36, 140, 48)
+
+        blue_button = QPushButton("Green Light", self)
+        blue_button.setStyleSheet("background: #1A4833; border: 2px solid black; border-radius: 24px; color: #F3F9F9")
+        blue_button.setGeometry(539, 36, 140, 48)
+
         # Connect button signals to functions
         play_button.clicked.connect(self.on_run_clicked)
         info_button.clicked.connect(self.on_info_clicked)
