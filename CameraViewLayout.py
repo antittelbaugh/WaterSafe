@@ -15,6 +15,7 @@ from skimage.morphology import closing
 import pandas as pd
 from Move import Move
 from Aquisition import run_single_camera
+from Light import turn_goff_led,turn_on_gled,turn_boff_led,turn_on_bled
 
 
 class ImageViewerWidget(FigureCanvas):
@@ -87,17 +88,19 @@ class CameraViewLayout(QMainWindow):
 
         green_button = QPushButton("Green Light", self)
         green_button.setStyleSheet("background: #1A4833; border: 2px solid black; border-radius: 24px; color: #F3F9F9")
-        green_button.setGeometry(369, 36, 100, 48)
+        green_button.setGeometry(369, 36, 110, 48)
 
         blue_button = QPushButton("Blue Light", self)
         blue_button.setStyleSheet("background: #0063A6; border: 2px solid black; border-radius: 24px; color: #F3F9F9")
-        blue_button.setGeometry(500, 36, 100, 48)
+        blue_button.setGeometry(500, 36, 110, 48)
 
         # Connect button signals to functions
         play_button.clicked.connect(self.on_run_clicked)
         info_button.clicked.connect(self.on_info_clicked)
         help_button.clicked.connect(self.on_help_clicked)
         save_button.clicked.connect(self.on_save_clicked)
+        green_button.clicked.connect(self.green)
+        blue_button.clicked.connect(self.blue)
 
     def create_sliders(self):
         # Create a group box for sliders (with no label)
@@ -179,6 +182,12 @@ class CameraViewLayout(QMainWindow):
 
     def on_info_clicked(self):
         print("Info button clicked")
+    def green():
+        turn_boff_led()
+        turn_on_gled()
+    def blue():
+        turn_goff_led()
+        turn_on_bled()
 
     def on_help_clicked(self):
         print("Help button clicked")
