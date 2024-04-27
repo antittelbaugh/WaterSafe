@@ -160,7 +160,6 @@ class WaterSafeApp(QMainWindow):
         df = pd.DataFrame(props)
         df['feret_diameter_max'] = df['feret_diameter_max'] * 1.2
         df = df[df['feret_diameter_max'] >= 10]
-        df.to_pickle('data.pkl')
         concentration = len(df['feret_diameter_max'])
         median = np.median(df['feret_diameter_max'])
         self.histogram_viewer.figure.clear()
