@@ -143,8 +143,7 @@ class WaterSafeApp(QMainWindow):
         
         # Load image and perform processing
        # turn_off_led()
-        combine()
-        circle()
+
         img = io.imread('output_image.jpg')
         img = rgb2gray(img)
         thresh = threshold_otsu(img)
