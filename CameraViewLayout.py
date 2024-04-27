@@ -182,10 +182,10 @@ class CameraViewLayout(QMainWindow):
 
     def on_info_clicked(self):
         print("Info button clicked")
-    def green():
+    def green(self):
         turn_boff_led()
         turn_on_gled()
-    def blue():
+    def blue(self):
         turn_goff_led()
         turn_on_bled()
 
