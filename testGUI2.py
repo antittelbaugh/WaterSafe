@@ -143,13 +143,13 @@ class WaterSafeApp(QMainWindow):
         
         # Load image and perform processing
        # turn_off_led()
-
+        circle()
         img = io.imread('output_image.jpg')
         img = rgb2gray(img)
         thresh = threshold_otsu(img)
         bw = closing(img > thresh)
         label_image = label(bw)
-        labeled_img = label2rgb(label_image, image=img, bg_label=0)
+        labeled_img = np.load('demo_image.npy')
         np.save('demo_image', labeled_img)
 
         # Display the labeled image
@@ -160,7 +160,7 @@ class WaterSafeApp(QMainWindow):
         df = pd.DataFrame(props)
         df['feret_diameter_max'] = df['feret_diameter_max'] * 1.2
         df = df[df['feret_diameter_max'] >= 10]
-        df.to_pickle('data.pkl')
+
         concentration = len(df['feret_diameter_max'])
         median = np.median(df['feret_diameter_max'])
         self.histogram_viewer.figure.clear()

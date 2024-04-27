@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw
 def circle():
     # Load the base image
-    image_path = 'combined_image.jpg'
+    image_path = 'Composite2.jpg'
     image = Image.open(image_path)
 
     # Create a black background with the desired size
